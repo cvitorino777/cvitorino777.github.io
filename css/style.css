@@ -85,6 +85,7 @@ text-shadow:
   transform: translateY(0);
 }
 
+/* botão */
 .btn {
   margin-top: 18px;
   padding: 10px 16px;
@@ -95,8 +96,9 @@ text-shadow:
   font-family: inherit;
   cursor: pointer;
   transition: all 0.25s ease;
+    margin-inline: auto;
+  display: block;
 }
-
 .btn:hover {
   border-color: rgba(181, 26, 43, 0.6);
   box-shadow: 0 0 18px rgba(181, 26, 43, 0.25);
@@ -104,28 +106,28 @@ text-shadow:
 }
 
 
+/* seção projetos */
 .projects {
-  margin-top: 18px;
+  margin-top: 20px;
   opacity: 0;
   max-height: 0;
   overflow: hidden;
   transform: translateY(8px);
   transition: all 0.35s ease;
 }
-
-
 .projects.open {
   opacity: 1;
   max-height: 500px;
   transform: translateY(0);
 }
-
 .project-list {
   margin-top: 12px;
   display: grid;
   gap: 10px;
 }
 
+
+/* ajustes visuais */
 .project-card {
   display: block;
   text-decoration: none;
@@ -136,16 +138,24 @@ text-shadow:
   transition: all 0.25s ease;
   color: var(--text-main);
 }
-
 .project-card p {
-  margin: 6px 0 0;
-  color: var(--text-muted);
+  margin-top: 6px;
   font-size: 14px;
+  color: var(--text-muted);
 }
-
+}
 .project-card:hover {
   border-color: rgba(255, 165, 134, 0.45);
   box-shadow: 0 0 18px rgba(255, 165, 134, 0.18);
   transform: translateY(-2px);
 }
-
+.projects h2 {
+  margin-top: 12px;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  color: var(--text-main);
+}
+.project-card h3 {
+  margin: 0;
+  font-size: 16px;
+  color: var(--text-main);
