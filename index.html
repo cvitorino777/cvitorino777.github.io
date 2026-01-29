@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Portfólio - Cesar</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Fonte (Space Grotesk) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/style.css">
+  <!-- CSS do projeto -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-<div class="container">
-<h1>Salve, me chamo <span class="highlight">Cesar</span></h1>
-<p>Estudante de Engenharia de Software.</p>
-<p>Esse é meu primeiro projeto no GitHub.</p>
-  <button id="btnProjetos" class="btn">Meus projetos</button>
+  <!-- CARD PRINCIPAL -->
+  <div class="container">
+    
+    <!-- APRESENTAÇÃO -->
+    <h1>Salve, me chamo <span class="highlight">Cesar</span></h1>
+    <p>Estudante de Engenharia de Software.</p>
+    <p>Esse é meu primeiro projeto no GitHub.</p>
 
-<section id="secProjetos" class="projects">
-  <h2>Projetos</h2>
+    <!-- BOTÃO (ABRE/FECHA A SEÇÃO DE PROJETOS) -->
+    <button id="btnProjetos" class="btn">Meus projetos</button>
 
-  <div class="project-list">
-    <a class="project-card" href="https://github.com/cvitorino777" target="_blank" rel="noopener">
-      <h3>Meu GitHub</h3>
-      <p>Repositórios e evolução dos projetos.</p>
-      <a class="project-card insta" 
-   href="https://www.instagram.com/SEU_USUARIO_AQUI" 
-   target="_blank" 
-   rel="noopener">
-  <h3>Instagram</h3>
-  <p>Contato, bastidores e projetos.</p>
-</a>
-    </a>
+    <!-- SEÇÃO DE PROJETOS (começa fechada, o JS abre) -->
+    <section id="secProjetos" class="projects">
+      <h2>Projetos</h2>
+
+      <!-- LISTA DE CARDS -->
+      <div class="project-list">
+
+        <!-- CARD: GITHUB -->
+        <a class="project-card"
+           href="https://github.com/cvitorino777"
+           target="_blank"
+           rel="noopener">
+          <h3>Meu GitHub</h3>
+          <p>Repositórios e evolução dos projetos.</p>
+        </a>
+
+        <!-- CARD: INSTAGRAM -->
+        <a class="project-card insta"
+           href="https://www.instagram.com/cesa_07/"
+           target="_blank"
+           rel="noopener">
+          <h3>📸 Instagram</h3>
+          <p>Contato, bastidores e projetos.</p>
+        </a>
+
+      </div>
+    </section>
   </div>
-</section>
-</div>
-<script src="js/script.js"></script>
+
+  <!-- JS DO PROJETO (sempre no final do body) -->
+  <script src="js/script.js"></script>
 </body>
 </html>
-
