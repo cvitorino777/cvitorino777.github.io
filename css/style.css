@@ -85,3 +85,67 @@ text-shadow:
   transform: translateY(0);
 }
 
+.btn {
+  margin-top: 18px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(22, 30, 47, 0.35);
+  color: var(--text-main);
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  border-color: rgba(181, 26, 43, 0.6);
+  box-shadow: 0 0 18px rgba(181, 26, 43, 0.25);
+  transform: translateY(-1px);
+}
+
+
+.projects {
+  margin-top: 18px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(8px);
+  transition: all 0.35s ease;
+}
+
+
+.projects.open {
+  opacity: 1;
+  max-height: 500px;
+  transform: translateY(0);
+}
+
+.project-list {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.project-card {
+  display: block;
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(36, 47, 73, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.25s ease;
+  color: var(--text-main);
+}
+
+.project-card p {
+  margin: 6px 0 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.project-card:hover {
+  border-color: rgba(255, 165, 134, 0.45);
+  box-shadow: 0 0 18px rgba(255, 165, 134, 0.18);
+  transform: translateY(-2px);
+}
+
