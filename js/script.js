@@ -6,3 +6,12 @@ window.addEventListener("load", () => {
     container.classList.add("show");
   }
 });
+const btn = document.querySelector("#btnProjetos");
+const sec = document.querySelector("#secProjetos");
+
+if (btn && sec) {
+  btn.addEventListener("click", () => {
+    sec.classList.toggle("open");
+    btn.textContent = sec.classList.contains("open") ? "Fechar projetos" : "Meus projetos";
+  });
+}
