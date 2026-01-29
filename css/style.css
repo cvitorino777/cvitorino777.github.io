@@ -2,7 +2,6 @@ style.css
 * {
   box-sizing: border-box;
 }
-
 :root {
   --bg-main: #161E2F;
   --bg-secondary: #242F49;
