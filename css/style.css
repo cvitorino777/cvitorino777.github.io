@@ -159,3 +159,14 @@ text-shadow:
   margin: 0;
   font-size: 16px;
   color: var(--text-main);
+
+
+  .project-card.insta {
+  border-color: rgba(255, 165, 134, 0.35);
+}
+
+.project-card.insta:hover {
+  box-shadow: 0 0 20px rgba(255, 165, 134, 0.35);
+  transform: translateY(-2px);
+}
+
