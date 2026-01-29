@@ -23,6 +23,7 @@ body {
   radial-gradient(circle at 30% 40%, rgba(181, 26, 43, 0.15), transparent 50%),
   radial-gradient(circle at 70% 60%, rgba(181, 26, 43, 0.08), transparent 55%),
   var(--bg-main);
+    background-size: 120% 120%;
   background-color: var(--bg-main);
   color: var(--text-main);
     justify-content: center;
