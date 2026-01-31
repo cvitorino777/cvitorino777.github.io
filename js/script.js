@@ -15,3 +15,4 @@ if (btn && sec) {
     btn.textContent = sec.classList.contains("open") ? "Fechar projetos" : "Meus projetos";
   });
 }
+document.getElementById("year").textContent = new Date().getFullYear();
