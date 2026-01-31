@@ -16,47 +16,98 @@
 </head>
 
 <body>
-  <!-- CARD PRINCIPAL -->
-  <div class="container">
-    
-    <!-- APRESENTAÇÃO -->
-    <h1>Salve, me chamo <span class="highlight">Cesar</span></h1>
-    <p>Estudante de Engenharia de Software.</p>
-    <p>Esse é meu primeiro projeto no GitHub.</p>
+  <header class="container header">
+    <a class="logo" href="#">Cesar</a>
 
-    <!-- BOTÃO (ABRE/FECHA A SEÇÃO DE PROJETOS) -->
-    <button id="btnProjetos" class="btn">Meus projetos</button>
+    <nav class="nav">
+      <a href="#projetos">Projetos</a>
+      <a href="#skills">Skills</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato" class="btn">Contato</a>
+    </nav>
+  </header>
 
-    <!-- SEÇÃO DE PROJETOS (começa fechada, o JS abre) -->
-    <section id="secProjetos" class="projects">
-      <h2>Projetos</h2>
+  <main>
+    <section class="container hero">
+      <div class="hero-text">
+        <p class="tag">Eng. de Software • Front-end</p>
+        <h1>Eu crio sites e interfaces limpas, rápidas e responsivas.</h1>
+        <p class="subtitle">
+          Portfólio com projetos reais, código organizado e foco em performance.
+        </p>
 
-      <!-- LISTA DE CARDS -->
-      <div class="project-list">
+        <div class="actions">
+          <a class="btn" href="#projetos">Ver projetos</a>
+          <a class="btn ghost" href="https://github.com/seuuser" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
 
-        <!-- CARD: GITHUB -->
-        <a class="project-card"
-           href="https://github.com/cvitorino777"
-           target="_blank"
-           rel="noopener">
-          <h3>Meu GitHub</h3>
-          <p>Repositórios e evolução dos projetos.</p>
-        </a>
-
-        <!-- CARD: INSTAGRAM -->
-        <a class="project-card insta"
-           href="https://www.instagram.com/cesa_07/"
-           target="_blank"
-           rel="noopener">
-          <h3>📸 Instagram</h3>
-          <p>Contato, bastidores e projetos.</p>
-        </a>
-
+      <div class="hero-card">
+        <p class="small">Disponível para freelance. </p>
+        <p><strong>Stack:</strong> HTML • CSS • JS</p>
+        <p><strong>Local:</strong> Brasil</p>
       </div>
     </section>
-  </div>
 
-  <!-- JS DO PROJETO (sempre no final do body) -->
+    <section id="projetos" class="container section">
+      <h2>Projetos</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Portfólio pessoal.</h3>
+          <p>Site responsivo desenvolvido com HTML, CSS e JavaScript para apresentar projetos,
+habilidades e contato profissional. Foco em organização, performance e design limpo.</p>
+          <div class="card-links">
+            <a href="#" target="_blank" rel="noreferrer">Demo</a>
+            <a href="#" target="_blank" rel="noreferrer">Código</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Estudo de Front-end</h3>
+          <p>Projeto prático para aprendizado de HTML semântico, CSS moderno
+e JavaScript básico, aplicando boas práticas de estrutura e estilo.</p>
+          <div class="card-links">
+            <a href="#" target="_blank" rel="noreferrer">Demo</a>
+            <a href="#" target="_blank" rel="noreferrer">Código</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container section">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Git/GitHub</span>
+      </div>
+    </section>
+
+    <section id="sobre" class="container section">
+      <h2>Sobre</h2>
+      <p>
+        Sou estudante de Engenharia de Software e desenvolvedor front-end em formação.
+Curto transformar ideias em interfaces funcionais e bem organizadas, com foco
+em experiência do usuário. Estou em constante evolução, estudando e aplicando
+HTML, CSS, JavaScript e versionamento com GitHub em projetos reais.
+      </p>
+    </section>
+
+    <section id="contato" class="container section">
+      <h2>Contato</h2>
+      <p>Quer trocar ideia? Me chama:</p>
+      <div class="actions">
+        <a class="btn" href="mailto:cvitorino157@">Email</a>
+        <a class="btn ghost" href="https://www.instagram.com/cesa_07/?hl=pt-br" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Cesar. Feito com VSCode + GitHub Pages.</p>
+  </footer>
+
   <script src="js/script.js"></script>
 </body>
-</html>
