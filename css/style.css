@@ -17,6 +17,11 @@ body{
   color: var(--fg);
 }
 
+body {
+  background: red;
+}
+
+
 /* bg glow igual teu print (aurora) */
 .bg-glow{
   position: fixed;
