@@ -284,6 +284,33 @@ body{
 }
 .link:hover{ border-bottom-color: rgba(139,92,246,.6); }
 
+
+@media (min-width: 1024px){
+
+  /* layout principal */
+  .hero-grid{
+    grid-template-columns: 320px 1fr;
+    gap: 40px;
+  }
+
+  /* projetos lado a lado */
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* textos maiores no PC */
+  .hero-title{
+    font-size: 46px;
+  }
+
+  /* mais respiro */
+  .section{
+    padding: 48px 0;
+  }
+
+}
+
+
 /* Chips */
 .chips{ display:flex; gap: 10px; flex-wrap: wrap; }
 .chip{
