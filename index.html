@@ -1,123 +1,198 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Portfólio - Cesar</title>
-
-  <!-- Fonte (Space Grotesk) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
-
-  <!-- CSS do projeto -->
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="Portfólio de Cesar — Front-end. Sites e interfaces rápidas, limpas e responsivas." />
+  <title>Cesar — Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="container header">
-    <a class="logo" href="#">Cesar</a>
+  <!-- BG glow -->
+  <div class="bg-glow" aria-hidden="true"></div>
 
-<nav class="nav">
-  <a href="#projetos">Projetos</a>
-  <a href="#skills">Skills</a>
-  <a href="#sobre">Sobre</a>
-  <a href="#contato" class="btn">Contato</a>
-</nav>
-    
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#topo">Cesar</a>
+
+      <nav class="nav">
+        <a href="#projetos">Projetos</a>
+        <a href="#skills">Skills</a>
+        <a href="#sobre">Sobre</a>
+        <a class="nav-cta" href="#contato">Contato</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="container hero">
-      <div class="hero-text">
-        <p class="tag">Eng. de Software • Front-end</p>
-        <h1>Eu crio sites e interfaces limpas, rápidas e responsivas.</h1>
-        <p class="subtitle">
-          Portfólio com projetos reais, código organizado e foco em performance.
-        </p>
+  <main id="topo">
+    <!-- HERO (2 colunas no desktop / 1 no mobile) -->
+    <section class="hero">
+      <div class="container hero-grid">
 
-        <div class="actions">
-          <a class="btn" href="#projetos">Ver projetos</a>
-          <a class="btn ghost" href="https://github.com/seuuser" target="_blank" rel="noreferrer">GitHub</a>
+        <!-- (VERMELHO) Coluna esquerda: nome / perfil -->
+        <aside class="profile">
+          <p class="pill">Eng. de Software • Front-end</p>
+
+          <h1 class="profile-name">Cesar</h1>
+
+          <p class="profile-bio">
+            Desenvolvedor front-end em formação. Foco em interfaces rápidas,
+            responsivas e com design limpo.
+          </p>
+
+          <div class="profile-links">
+            <a class="btn btn-primary" href="#contato">Falar comigo</a>
+            <a class="btn btn-ghost" href="https://github.com/SEUUSER" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+
+          <div class="profile-card">
+            <p><strong>Disponível:</strong> Freelance</p>
+            <p><strong>Stack:</strong> HTML • CSS • JS</p>
+            <p><strong>Local:</strong> Brasil</p>
+          </div>
+        </aside>
+
+        <!-- (AZUL) Coluna direita: título / CTA -->
+        <div class="hero-main">
+          <h2 class="hero-title">
+            Eu crio sites e interfaces limpas,<br />
+            rápidas e responsivas.
+          </h2>
+
+          <p class="hero-subtitle">
+            Portfólio com projetos reais, código organizado e foco em performance.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn-ghost" href="https://github.com/SEUUSER" target="_blank" rel="noreferrer">Código</a>
+          </div>
+
+          <div class="hero-strip">
+            <div class="strip-item">
+              <span class="dot"></span>
+              <span>Layout responsivo</span>
+            </div>
+            <div class="strip-item">
+              <span class="dot"></span>
+              <span>UI limpa + performance</span>
+            </div>
+            <div class="strip-item">
+              <span class="dot"></span>
+              <span>Projetos organizados</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h3>Projetos</h3>
+          <p>Alguns projetos que fiz/estou fazendo.</p>
+        </div>
+
+        <div class="grid">
+          <!-- Card 1 -->
+          <article class="card">
+            <h4>Portfólio pessoal</h4>
+            <p>Site responsivo para apresentar projetos, habilidades e contato profissional.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="card-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <h4>Estudo de Front-end</h4>
+            <p>Projeto para praticar HTML semântico, CSS moderno e JavaScript básico.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="card-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="hero-card">
-        <p class="small">Disponível para freelance. </p>
-        <p><strong>Stack:</strong> HTML • CSS • JS</p>
-        <p><strong>Local:</strong> Brasil</p>
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h3>Skills</h3>
+          <p>Ferramentas e tecnologias que estou usando.</p>
+        </div>
+
+        <div class="chips">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Git/GitHub</span>
+        </div>
       </div>
     </section>
 
-    <section id="projetos" class="container section">
-      <h2>Projetos</h2>
+    <!-- Sobre -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h3>Sobre</h3>
+          <p>
+            Sou estudante e desenvolvedor front-end em formação. Curto transformar ideias em interfaces
+            organizadas, com foco em experiência do usuário e performance.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <section id="projetos" class="container section">...</section>
-
-      <section id="skills" class="container section">...</section>
-
-      <section id="sobre" class="container section">...</section>
-
-      <section id="contato" class="container section">...</section>
-
-      <div class="grid">
-        <article class="card">
-          <h3>Portfólio pessoal.</h3>
-          <p>Site responsivo desenvolvido com HTML, CSS e JavaScript para apresentar projetos,
-habilidades e contato profissional. Foco em organização, performance e design limpo.</p>
-          <div class="card-links">
-            <a href="#" target="_blank" rel="noreferrer">Demo</a>
-            <a href="#" target="_blank" rel="noreferrer">Código</a>
+    <!-- Contato -->
+    <section id="contato" class="section">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h3>Bora trocar ideia?</h3>
+            <p>Me chama por aqui e a gente desenrola.</p>
           </div>
-        </article>
 
-        <article class="card">
-          <h3>Estudo de Front-end</h3>
-          <p>Projeto prático para aprendizado de HTML semântico, CSS moderno
-e JavaScript básico, aplicando boas práticas de estrutura e estilo.</p>
-          <div class="card-links">
-            <a href="#" target="_blank" rel="noreferrer">Demo</a>
-            <a href="#" target="_blank" rel="noreferrer">Código</a>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="mailto:SEUEMAIL@EMAIL.COM">Email</a>
+            <a class="btn btn-ghost" href="https://instagram.com/SEUINSTA" target="_blank" rel="noreferrer">Instagram</a>
           </div>
-        </article>
+        </div>
       </div>
     </section>
 
-    
-    <section id="skills" class="container section">
-      <h2>Skills</h2>
-      <div class="chips">
-        <span class="chip">HTML</span>
-        <span class="chip">CSS</span>
-        <span class="chip">JavaScript</span>
-        <span class="chip">Git/GitHub</span>
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Cesar. Feito com VSCode + GitHub Pages.</p>
       </div>
-    </section>
-
-    <section id="sobre" class="container section">
-      <h2>Sobre</h2>
-      <p>
-        Sou estudante de Engenharia de Software e desenvolvedor front-end em formação.
-Curto transformar ideias em interfaces funcionais e bem organizadas, com foco
-em experiência do usuário. Estou em constante evolução, estudando e aplicando
-HTML, CSS, JavaScript e versionamento com GitHub em projetos reais.
-      </p>
-    </section>
-
-    <section id="contato" class="container section">
-      <h2>Contato</h2>
-      <p>Quer trocar ideia? Me chama:</p>
-      <div class="actions">
-        <a class="btn" href="mailto:cvitorino157@">Email</a>
-        <a class="btn ghost" href="https://www.instagram.com/cesa_07/?hl=pt-br" target="_blank" rel="noreferrer">Instagram</a>
-      </div>
-    </section>
+    </footer>
   </main>
 
-  <footer class="container footer">
-    <p>© <span id="year"></span> Cesar. Feito com VSCode + GitHub Pages.</p>
-  </footer>
-
-  <script src="js/script.js"></script>
+  <script>
+    // Scroll suave (sem depender de lib)
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener("click", (e) => {
+        const id = a.getAttribute("href");
+        const el = document.querySelector(id);
+        if (!el) return;
+        e.preventDefault();
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+  </script>
 </body>
+</html>
+
