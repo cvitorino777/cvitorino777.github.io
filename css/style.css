@@ -17,7 +17,7 @@ body{
   color: var(--fg);
 }
 
-/* bg glow igual teu print (aurora) */
+/* bg glow igual */
 .bg-glow{
   position: fixed;
   inset: 0;
@@ -34,6 +34,13 @@ body{
   width: min(1100px, calc(100% - 32px));
   margin: 0 auto;
 }
+
+/* Header usando o mesmo "container" do site (alinha tudo) */
+.header .container{
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
 
 /* Header */
 .header{
@@ -76,7 +83,7 @@ body{
 }
 
 /* HERO */
-.hero{ padding: 56px 0 8px; }
+.hero{ padding: 48px 0 12px; }
 
 .hero-grid{
   display:grid;
@@ -183,7 +190,13 @@ body{
   border: 1px solid transparent;
   font-size: 14px;
   color: var(--fg);
+  transition: transform .12s ease, border-color .12s ease, background .12s ease;
 }
+
+.btn:hover{
+  transform: translateY(-1px);
+}
+
 .btn-primary{
   background: rgba(139,92,246,.22);
   border-color: rgba(139,92,246,.35);
@@ -191,6 +204,7 @@ body{
 .btn-primary:hover{
   background: rgba(139,92,246,.28);
 }
+
 .btn-ghost{
   background: transparent;
   border-color: rgba(255,255,255,.16);
@@ -212,7 +226,7 @@ body{
 }
 
 /* Sections */
-.section{ padding: 44px 0; }
+.section{ padding: 36px 0; }
 .section-head h3{
   margin: 0 0 6px;
   font-size: 18px;
@@ -235,9 +249,18 @@ body{
   border: 1px solid var(--line);
   background: rgba(255,255,255,.04);
   border-radius: 16px;
-  padding: 16px;
+  padding: 18px;              /* antes 16px */
   backdrop-filter: blur(10px);
+
+  transition: transform .15s ease, border-color .15s ease;
+  will-change: transform;
 }
+
+.card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(139,92,246,.35);
+}
+
 .card h4{ margin: 0 0 6px; }
 .card p{ margin: 0 0 12px; color: var(--muted); }
 .tags{ display:flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
@@ -276,14 +299,19 @@ body{
   border: 1px solid rgba(139,92,246,.22);
   background: linear-gradient(180deg, rgba(139,92,246,.10), rgba(255,255,255,.03));
   border-radius: 18px;
-  padding: 18px;
+  padding: 22px;              /* antes 18px */
   display:flex;
   gap: 16px;
   align-items:center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.cta h3{ margin: 0 0 4px; }
+
+.cta h3{
+  margin: 0 0 4px;
+  font-size: 20px;            /* dá mais presença */
+}
+
 .cta p{ margin: 0; color: var(--muted); }
 .cta-actions{ display:flex; gap: 10px; flex-wrap: wrap; }
 
